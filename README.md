@@ -5,7 +5,7 @@
 
 # Demo
 
-1. Putting images in "input_image" folder
+1. Preparing images
 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test.jpg" alt="属性" title="タイトル">
@@ -13,7 +13,7 @@
 
 <br>
 
-2. Generating an image without the human
+2. Processing images with mask
 
 <div align="center">
   <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性" title="タイトル">
