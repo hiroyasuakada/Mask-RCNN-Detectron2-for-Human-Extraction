@@ -64,6 +64,5 @@ or
 ## 6. Getting 4 types of images in 'output_image' directory
 
 
-
 # References
 [Detectron2 Facebook AI Research's next generation software system](https://github.com/facebookresearch/detectron2)
