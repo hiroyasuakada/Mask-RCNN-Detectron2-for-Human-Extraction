@@ -8,9 +8,7 @@
 1. Putting images in "input_image" folder
 
 <div align="center">
-<img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/input_1.jpg" alt="属性" title="タイトル">
-<img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/input_2.jpg" alt="属性" title="タイトル">
-<img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/input_3.jpg" alt="属性" title="タイトル">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test.jpg" alt="属性" title="タイトル">
 </div>
 
 <br>
@@ -18,7 +16,7 @@
 2. Generating an image without the human
 
 <div align="center">
-<img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/output_1.jpg" alt="属性" title="タイトル">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test.jpg" alt="属性" title="タイトル">
 <img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/output_2.jpg" alt="属性" title="タイトル">
 <img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/output_3.jpg" alt="属性" title="タイトル">
 </div>
