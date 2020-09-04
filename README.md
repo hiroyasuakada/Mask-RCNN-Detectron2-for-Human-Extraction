@@ -32,7 +32,7 @@
 please see INSTALL.md. in the Installation section.
 Using its dockerfile is highly recommended.
 
-## 2. Download pre-trained models of Mask R-CNN from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
+## 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
 My system is using *Mask R-CNN X152*, so please download it.
 
@@ -43,11 +43,11 @@ My system is using *Mask R-CNN X152*, so please download it.
 
 ## 4. Preparing .jpg images in 'input_image' directory
 
-## 5. Run 
+## 5. Run process.py
 
     python3 process.py
     
-    or
+or
     
     python process.py
 
