@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/detectron2_repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/detectron2_repo_local" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/detectron2_repo_n" vcs="Git" />
+  </component>
+</project>
