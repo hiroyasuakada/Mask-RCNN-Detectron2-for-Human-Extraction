@@ -17,7 +17,7 @@
 
 <div align="center">
   <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性">
-  <figcaption>{{ include.description }}</figcaption>
+  <figcaption>{{ 属性 }}</figcaption>
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test.jpg" alt="属性">
   <br>
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test.jpg" alt="属性">
