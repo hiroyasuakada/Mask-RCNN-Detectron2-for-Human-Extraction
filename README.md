@@ -32,15 +32,14 @@
 please see INSTALL.md. in the Installation section.
 Using its dockerfile is highly recommended.
 
-## 2. Clone this repository
+## 2. Download pre-trained models of Mask R-CNN from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
+
+My system is using *Mask R-CNN X152*, so please download it.
+
+
+## 3. Clone this repository
 
     git clone https://github.com/hiroyasuakada/mask-processing.git
-
-## 3. Processing learning phase on cnn, transfer learning
-
-animal_cnn.py: learning train data based on gen_data.py
-
-animal_cnn_augmented.py: learning train data based on gen_data_augmented.py
 
 ## 4. Showing the result of learning on commandprompt
 
