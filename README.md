@@ -34,7 +34,7 @@ Using its dockerfile is highly recommended.
 
 ## 2. Clone this repository
 
-git clone https://github.com/hiroyasuakada/mask-processing.git
+    git clone https://github.com/hiroyasuakada/mask-processing.git
 
 ## 3. Processing learning phase on cnn, transfer learning
 
