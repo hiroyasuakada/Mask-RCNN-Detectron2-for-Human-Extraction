@@ -29,11 +29,12 @@
 
 ## 1. Install [Detectron2](<https://github.com/facebookresearch/detectron2/>)
 
-## 2. Converting the collected data values to numpy file
+please see INSTALL.md. in the Installation section.
+Using its dockerfile is highly recommended.
 
-gen_data.py: normalizing numbers
+## 2. Clone this repository
 
-gen_data_augmented.py: adding rotated and reversed data to original ones
+git clone https://github.com/hiroyasuakada/mask-processing.git
 
 ## 3. Processing learning phase on cnn, transfer learning
 
