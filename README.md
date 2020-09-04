@@ -5,7 +5,7 @@
 
 # Demo
 
-1. Taking a single image with a human as an input
+1. Putting images in "input_image" folder
 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/dynamic-object-removal-with-unpaired-images/blob/master/demo/input_1.jpg" alt="属性" title="タイトル">
