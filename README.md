@@ -41,9 +41,19 @@ My system is using *Mask R-CNN X152*, so please download it.
 
     git clone https://github.com/hiroyasuakada/mask-processing.git
 
-## 4. Showing the result of learning on commandprompt
+## 4. Preparing .jpg images in 'input_image' directory
 
-predict.py
+## 5. Run 
+
+    python3 process.py
+    
+    or
+    
+    python process.py
+
+## 6. Getting 4 types of images in 'output_image' directory
+
+
 
 # References
-["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://arxiv.org/abs/1703.10593)
+[Detectron2 Facebook AI Research's next generation software system](https://github.com/facebookresearch/detectron2)
