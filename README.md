@@ -5,7 +5,7 @@
 
 # Demo
 
-1. Preparing images ('input_image' directory)
+### 1. Preparing images ('input_image' directory)
 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test.jpg" alt="属性" title="タイトル">
@@ -13,7 +13,7 @@
 
 <br>
 
-2. Processing images with mask ('output_image' directory)
+### 2. Processing images with mask ('output_image' directory)
 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性">
