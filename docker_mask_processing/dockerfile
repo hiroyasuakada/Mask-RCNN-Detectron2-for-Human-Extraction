@@ -98,6 +98,4 @@ RUN echo y | apt install libxrender1
 RUN rm -r pytorch-CycleGAN-and-pix2pix
 RUN git clone https://github.com/hiroyasuakada/mask-processing.git
 
-RUN cd mask-processing/detectron2_repo_with_revision/configs/ && mkdir model
-
 RUN apt update
