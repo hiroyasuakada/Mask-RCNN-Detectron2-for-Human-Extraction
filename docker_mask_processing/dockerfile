@@ -1,0 +1,103 @@
+##############################################################################
+##               ubuntu 18.04 with cuda 10.0 & cudnn 7.4.2.24               ##
+##############################################################################
+# https://gitlab.com/nvidia/cuda/blob/master/dist/ubuntu16.04/10.1/devel/cudnn7/Dockerfile
+
+FROM nvidia/cuda:10.0-devel-ubuntu18.04
+
+ENV CUDNN_VERSION 7.4.2.24
+
+# change server for apt-get
+RUN sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libcudnn7=$CUDNN_VERSION-1+cuda10.0 \
+    libcudnn7-dev=$CUDNN_VERSION-1+cuda10.0 \
+    && \
+    apt-mark hold libcudnn7 && \
+    rm -rf /var/lib/apt/lists/*
+
+ENV PATH /usr/local/cuda-10.0/bin:${PATH}
+ENV LD_LIBRARY_PATH /usr/local/cuda-10.0/lib64:${LD_LIBRARY_PATH}
+
+##############################################################################
+##                Python3 & matplotlib & pip & opencv & tf                  ##
+##############################################################################
+
+RUN apt update
+RUN echo y | apt install python3
+RUN echo y | apt install python3-pip
+
+RUN pip3 install matplotlib && \
+    pip3 install pillow && \
+    pip3 install opencv-python && \
+    pip3 install tensorflow-gpu==1.13.1
+
+
+##############################################################################
+##                               pytorch                                    ##
+##############################################################################
+RUN apt update
+RUN echo y | apt install git
+
+
+##############################################################################
+##                               CycleGAN                                   ##
+##############################################################################
+
+RUN mkdir /workspace/ && cd /workspace/ && git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git && cd pytorch-CycleGAN-and-pix2pix && pip3 install -r requirements.txt
+
+RUN cd workspace/pytorch-CycleGAN-and-pix2pix/datasets/ && mkdir double_ridge
+
+WORKDIR /workspace
+
+# ##############################################################################
+# cp -r testA testB trainA trainB /workspace/pytorch-CycleGAN-and-pix2pix/datasets/double_ridge/
+# python3 train.py --dataroot ./datasets/double_ridge --name double_ridge_cyclegan --model cycle_gan --gpu_ids 0,1,2 --batch_size 3
+# python3 test.py --dataroot ./datasets/double_ridge --name double_ridge_cyclegan --model cycle_gan --gpu_ids 0,1,2 --batch_size 3
+
+# python3 -m visdom.server
+# ##############################################################################
+
+
+
+##############################################################################
+##                               detectron2                                 ##
+##############################################################################
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && apt-get install -y \
+	ca-certificates wget sudo && \
+  rm -rf /var/lib/apt/lists/*
+
+# install dependencies
+# See https://pytorch.org/ for other options if you use a different version of CUDA
+RUN pip3 install tensorboard cython
+RUN pip3 install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+
+RUN pip3 install 'git+https://github.com/facebookresearch/fvcore'
+
+# # install detectron2
+RUN git clone https://github.com/facebookresearch/detectron2 detectron2_repo
+ENV FORCE_CUDA="1"
+ENV TORCH_CUDA_ARCH_LIST="Kepler;Kepler+Tesla;Maxwell;Maxwell+Tegra;Pascal;Volta;Turing"
+RUN pip3 install -e detectron2_repo
+
+##############################################################################
+##                                  error                                   ##
+##############################################################################
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt update
+RUN echo y | apt install libsm6
+RUN echo y | apt install libxrender1
+
+##############################################################################
+##                             mask_processing                              ##
+##############################################################################
+
+RUN rm -r pytorch-CycleGAN-and-pix2pix
+RUN git clone https://github.com/hiroyasuakada/mask-processing.git
+
+RUN cd mask-processing/detectron2_repo_with_revision/configs/ && mkdir model
+
+RUN apt update
