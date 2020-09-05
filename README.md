@@ -5,7 +5,7 @@
 
 # Demo
 
-1. Preparing images
+### 1. Preparing images ('input_image' directory)
 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test.jpg" alt="属性" title="タイトル">
@@ -13,14 +13,24 @@
 
 <br>
 
-2. Processing images with mask
+### 2. Processing images with mask ('output_image' directory)
 
 <div align="center">
-  <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性" title="タイトル">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test.jpg" alt="属性" title="タイトル">
-  <br>
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test.jpg" alt="属性" title="タイトル">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/cropped_figure/test.jpg" alt="属性" title="タイトル">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test.jpg" alt="属性">
+<div align="center">
+image_with_full_prediction　　　　　　　image_with_mask_cropped
+</div>
+
+<br>
+<br>
+
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/cropped_figure/test.jpg" alt="属性">
+<div align="center">
+binary_mask　　　　　　　　　　　　　　　cropped_figure
+</div>
+
 </div>
 
 <br>
@@ -32,19 +42,27 @@
 please see INSTALL.md. in the Installation section.
 Using its dockerfile is highly recommended.
 
-## 2. Clone this repository
+## 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
+
+My system is using *Mask R-CNN X152*, so please download it.
+
+
+## 3. Clone this repository
 
     git clone https://github.com/hiroyasuakada/mask-processing.git
 
-## 3. Processing learning phase on cnn, transfer learning
+## 4. Preparing .jpg images in 'input_image' directory
 
-animal_cnn.py: learning train data based on gen_data.py
+## 5. Run process.py
 
-animal_cnn_augmented.py: learning train data based on gen_data_augmented.py
+    python3 process.py
+    
+or
+    
+    python process.py
 
-## 4. Showing the result of learning on commandprompt
+## 6. Getting 4 types of images in 'output_image' directory
 
-predict.py
 
 # References
-["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://arxiv.org/abs/1703.10593)
+[Detectron2 Facebook AI Research's next generation software system](https://github.com/facebookresearch/detectron2)
