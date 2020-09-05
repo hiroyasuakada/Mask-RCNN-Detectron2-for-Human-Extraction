@@ -14,8 +14,8 @@ End-to-End application to extract humans in images based on a pre-trained model 
 
 <br>
 
-### 2. Producing four types of the images with mask
-
+### 2. Producing four types of the images after the mask process
+ 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test.jpg" alt="属性">
