@@ -37,7 +37,7 @@ binary_mask　　　　　　　　　　　　　　　cropped_figure
 
 # Usage
 
-## 1. Clone this repository
+## 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     git clone https://github.com/hiroyasuakada/mask-processing.git
 
