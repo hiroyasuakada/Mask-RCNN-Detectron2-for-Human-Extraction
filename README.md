@@ -37,17 +37,17 @@ binary_mask　　　　　　　　　　　　　　　cropped_figure
 
 # Usage
 
-## 1. Install [Detectron2](<https://github.com/facebookresearch/detectron2/>)
+## 1. Clone this repository
 
-please see INSTALL.md. in the Installation section.
-Using its dockerfile is highly recommended.
+    git clone https://github.com/hiroyasuakada/mask-processing.git
 
-## 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
+## 2. 
+
+
+## 3. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
 My system is using *Mask R-CNN X152*, so please download it.
 
-
-## 3. Clone this repository
 
     git clone https://github.com/hiroyasuakada/mask-processing.git
 
