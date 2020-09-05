@@ -1,10 +1,10 @@
 # mask-processing
 
-# Description
+## Description
 
 End-to-End application to extract humans in images. Please see examples below.
 
-# Demo
+## Demo
 
 ### 1. Preparing images (possible to process multiple images)
 
@@ -36,25 +36,25 @@ binary_mask　　　　　　　　　　　　　　　cropped_figure
 
 <br>
 
-# Usage
+## Usage
 
-## 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
+### 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     ./build.sh
     ./run.sh
 
 Current directory should be 'workplace' and my main directory is 'mask-processing'.
 
-## 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
+### 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
 My system is using pkl file of *Mask R-CNN X152*, so please download it. 
 Then, put it into configs of mask-processing directory.
 
     mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
 
-## 3. Preparing .jpg images in 'input_image' directory (possible to process multiple images)
+### 3. Preparing .jpg images in 'input_image' directory (possible to process multiple images)
 
-## 4. Run process.py
+### 4. Run process.py
 
     python3 process.py
     
@@ -62,8 +62,8 @@ or
     
     python process.py
 
-## 5. Getting 4 types of images in 'output_image' directory
+### 5. Getting 4 types of images in 'output_image' directory
 
 
-# References
+## References
 [Detectron2 Facebook AI Research's next generation software system](https://github.com/facebookresearch/detectron2)
