@@ -39,21 +39,19 @@ binary_mask　　　　　　　　　　　　　　　cropped_figure
 
 ## 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
-    git clone https://github.com/hiroyasuakada/mask-processing.git
+    ./build.sh
+    ./run.sh
 
-## 2. 
+Current directory should be 'workplace' and my main directory is 'mask-processing'.
 
+## 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
-## 3. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
+My system is using *Mask R-CNN X152*, so please download it. (cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl)
+Then, please put it into ./mask-processing/detectron2_repo_with_revision/configs/model/
 
-My system is using *Mask R-CNN X152*, so please download it.
+## 3. Preparing .jpg images in 'input_image' directory (possible to process multiple images)
 
-
-    git clone https://github.com/hiroyasuakada/mask-processing.git
-
-## 4. Preparing .jpg images in 'input_image' directory
-
-## 5. Run process.py
+## 4. Run process.py
 
     python3 process.py
     
@@ -61,7 +59,7 @@ or
     
     python process.py
 
-## 6. Getting 4 types of images in 'output_image' directory
+## 5. Getting 4 types of images in 'output_image' directory
 
 
 # References
