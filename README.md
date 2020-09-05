@@ -2,6 +2,7 @@
 
 # Description
 
+End-to-End application to extract humans in images. Please see examples below.
 
 # Demo
 
