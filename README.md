@@ -46,8 +46,10 @@ Current directory should be 'workplace' and my main directory is 'mask-processin
 
 ## 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
-My system is using *Mask R-CNN X152*, so please download it. (cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl)
-Then, please put it into ./mask-processing/detectron2_repo_with_revision/configs/model/
+My system is using pkl file of *Mask R-CNN X152*, so please download it. 
+Then, put it into 
+
+    ./mask-processing/detectron2_repo_with_revision/configs/model/
 
 ## 3. Preparing .jpg images in 'input_image' directory (possible to process multiple images)
 
