@@ -41,7 +41,8 @@ binary_mask　　　　　　　　　　　　　　　cropped_figure
 ### 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     ./build.sh
-    ./run.sh
+
+and then run docker container.
 
 Current directory should be 'workplace' and my main directory is 'mask-processing'.
 
