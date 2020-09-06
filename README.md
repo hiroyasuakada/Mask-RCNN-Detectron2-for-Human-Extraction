@@ -9,7 +9,7 @@ End-to-End application to extract humans and their belongings (bags, etc.) in im
 ### 1. Preparing images (possible to process multiple images)
 
 <div align="center">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test.jpg" alt="属性" title="タイトル">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test_.jpg" alt="属性" title="タイトル">
 </div>
 
 <br>
