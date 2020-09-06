@@ -9,7 +9,7 @@ End-to-End application to extract humans and their belongings (bags, etc.) in im
 ### 1. Preparing images (possible to process multiple images)
 
 <div align="center">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test.jpg" alt="属性" title="タイトル">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/input_image/test_image.jpg" alt="属性" title="タイトル">
 </div>
 
 <br>
@@ -17,8 +17,8 @@ End-to-End application to extract humans and their belongings (bags, etc.) in im
 ### 2. Producing four types of the images after the mask process
  
 <div align="center">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test_image.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test_image.jpg" alt="属性">
 <div align="center">
 image_with_full_prediction　　　　　　　image_with_mask_cropped
 </div>
@@ -26,8 +26,8 @@ image_with_full_prediction　　　　　　　image_with_mask_cropped
 <br>
 <br>
 
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test.jpg" alt="属性">
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/cropped_figure/test.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test_image.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/cropped_figure/test_image.jpg" alt="属性">
 <div align="center">
 binary_mask　　　　　　　　　　　　　　　cropped_figure
 </div>
