@@ -2,7 +2,7 @@
 
 ## Description
 
-End-to-End application to extract humans in images. Please see examples below.
+End-to-End application to extract humans and their belongings (bags, etc.) in images based on a pre-trained model of [Mask R-CNN (Detectron2)](https://github.com/facebookresearch/detectron2). Please see examples below.
 
 ## Demo
 
@@ -14,8 +14,8 @@ End-to-End application to extract humans in images. Please see examples below.
 
 <br>
 
-### 2. Producing four types of the images with mask
-
+### 2. Producing four types of the images after the mask process
+ 
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test.jpg" alt="属性">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test.jpg" alt="属性">
@@ -41,7 +41,8 @@ binary_mask　　　　　　　　　　　　　　　cropped_figure
 ### 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     ./build.sh
-    ./run.sh
+
+and then run docker container.
 
 Current directory should be 'workplace' and my main directory is 'mask-processing'.
 
@@ -49,6 +50,8 @@ Current directory should be 'workplace' and my main directory is 'mask-processin
 
 My system is using pkl file of *Mask R-CNN X152*, so please download it. 
 Then, put it into configs of mask-processing directory.
+
+'cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl'
 
     mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
 
