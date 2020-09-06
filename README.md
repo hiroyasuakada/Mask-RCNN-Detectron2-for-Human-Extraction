@@ -25,8 +25,8 @@ image_with_full_prediction　　　　image_with_mask_cropped
 
 <br>
 
-<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test_output.jpg" alt="属性">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/cropped_figure/test_output.jpg" alt="属性">
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test_output.jpg" alt="属性">
 <div align="center">
 binary_mask　　　　　　　　　　　　cropped_figure
 </div>
