@@ -2,7 +2,7 @@
 
 ## Description
 
-End-to-End application to extract humans in images based on a pre-trained model of [Mask R-CNN (Detectron2)](https://github.com/facebookresearch/detectron2). Please see examples below.
+End-to-End application to extract humans and their belongings (bags, etc.) in images based on a pre-trained model of [Mask R-CNN (Detectron2)](https://github.com/facebookresearch/detectron2). Please see examples below.
 
 ## Demo
 
