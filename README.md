@@ -51,6 +51,8 @@ Current directory should be 'workplace' and my main directory is 'mask-processin
 My system is using pkl file of *Mask R-CNN X152*, so please download it. 
 Then, put it into configs of mask-processing directory.
 
+'cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl'
+
     mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
 
 ### 3. Preparing .jpg images in 'input_image' directory (possible to process multiple images)
