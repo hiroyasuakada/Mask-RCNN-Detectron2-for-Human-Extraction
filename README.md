@@ -19,11 +19,18 @@ End-to-End application to extract humans and their belongings (bags, etc.) in im
 <div align="center">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_full_prediction/test_output.jpg" alt="属性">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/image_with_mask_cropped/test_output.jpg" alt="属性">
- <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test_output.jpg" alt="属性">
+<div align="center">
+image_with_full_prediction　　　　image_with_mask_cropped
+</div>
+
+<br>
+
+<img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/binary_mask/test_output.jpg" alt="属性">
 <img src="https://github.com/hiroyasuakada/mask-processing/blob/master/demo/output_image/cropped_figure/test_output.jpg" alt="属性">
 <div align="center">
-image_with_full_prediction　　　　　　　image_with_mask_cropped         binary_mask　　　　　　　　　　　　　　　cropped_figure
+binary_mask　　　　　　　　　　　　cropped_figure
 </div>
+
 </div>
 
 <br>
