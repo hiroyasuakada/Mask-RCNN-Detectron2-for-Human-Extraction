@@ -37,7 +37,7 @@ binary_mask　　　　　　 　　 　cropped_figure
 
 ## Usage
 
-### 1. Using [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
+### 1. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     ./build.sh
 
@@ -54,7 +54,7 @@ Then, put it into configs of mask-processing directory.
 
     mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
 
-### 3. Preparing .jpg images in 'input_image' directory (possible to process multiple images)
+### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
 ### 4. Run process.py
 
@@ -64,7 +64,7 @@ or
     
     python process.py
 
-### 5. Getting 4 types of images in 'output_image' directory
+### 5. Get 4 types of images in 'output_image' directory
 
 
 ## References
