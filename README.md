@@ -1,4 +1,4 @@
-# mask-processing
+# Mask-RCNN-Detectron2-for-Human-Extraction
 
 ## Description
 
