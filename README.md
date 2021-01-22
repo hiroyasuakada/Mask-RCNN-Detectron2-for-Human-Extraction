@@ -6,7 +6,7 @@ Application to extract humans and their belongings (bags, etc.) in images based 
 
 Please see examples of extracting "humans and handbags" below.
 
-if you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
+If you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
 
 ## Demo
 
@@ -41,6 +41,8 @@ binary_mask　　　　　　 　　 　cropped_figure
 
 ## Usage
 
+If you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
+
 ### 1. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     ./build.sh
@@ -67,6 +69,7 @@ Then, put it into configs of mask-processing directory.
 or
     
     python process.py
+    
 
 ### 5. Get 4 types of images in 'output_image' directory
 
