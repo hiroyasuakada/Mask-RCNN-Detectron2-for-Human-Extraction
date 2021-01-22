@@ -1,10 +1,12 @@
-# Mask-RCNN-Detectron2-for-Object-Extraction
+# Mask-RCNN-Detectron2-for-Human-Extraction
 
 ## Description
 
 Application to extract humans and their belongings (bags, etc.) in images based on a pre-trained model of [Mask R-CNN (Detectron2)](https://github.com/facebookresearch/detectron2). 
 
 Please see examples of extracting "humans and handbags" below.
+
+if you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
 
 ## Demo
 
