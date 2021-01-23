@@ -43,13 +43,15 @@ binary_mask　　　　　　 　　 　cropped_figure
 
 ##### Please note that if you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
 
-### 1. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
+### 1. Clone this repository
+
+    git clone https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction.git
+
+### 2. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
 
     ./build.sh
 
 and then run docker container.
-
-Current directory should be 'workplace' and my main directory is 'mask-processing'.
 
 ### 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
