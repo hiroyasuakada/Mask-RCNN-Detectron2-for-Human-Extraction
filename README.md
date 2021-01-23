@@ -55,14 +55,12 @@ and then run docker container.
 
 ### 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
-My system is using pkl file of *Mask R-CNN X152*, so download it. 
-Then, put it into configs of mask-processing directory.
+Please download pre-trained weights, and then put it into configs of the 'detectron2_repo_with_revision' directory.
 
-'cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl'
+    mv (pkl file) ./Mask-RCNN-Detectron2-for-Human-Extraction/detectron2_repo_with_revision/configs/model/
 
-    mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
-
-Note that if you want to use other pre-trained weights (pkl file), please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33).
+Currently, my system is using "cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl". 
+But if you want to other pre-trained weights, please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33). 
 
 ### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
