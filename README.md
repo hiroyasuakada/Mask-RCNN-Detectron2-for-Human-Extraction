@@ -61,7 +61,7 @@ Please download the pre-trained weights, and then put it into configs of the 'de
 
 Currently, my system is using "cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl". 
 
-If you want to other pre-trained weights, please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33). 
+If you want to use other pre-trained weights, please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33). 
 
 ### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
