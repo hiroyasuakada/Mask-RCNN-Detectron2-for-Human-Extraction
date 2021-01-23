@@ -45,7 +45,7 @@ binary_mask　　　　　　 　　 　cropped_figure
 
     git clone https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction.git
 
-### 2. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) in the 'docker_mask_processing' direcotry to install requirements
+### 2. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) in the 'docker_mask_processing' direcotry to install requirements for Detectron2.
 
     ./build.sh
 
