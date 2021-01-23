@@ -42,11 +42,11 @@ RUN pip3 install matplotlib && \
 RUN apt update
 RUN echo y | apt install git
 
-RUN mkdir /workspace/ && cd /workspace/ && git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git && cd pytorch-CycleGAN-and-pix2pix && pip3 install -r requirements.txt
+RUN mkdir /temporary_workspace/ && cd /temporary_workspace/ && git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git && cd pytorch-CycleGAN-and-pix2pix && pip3 install -r requirements.txt
 
-RUN cd workspace/pytorch-CycleGAN-and-pix2pix/datasets/ && mkdir double_ridge
+RUN cd temporary_workspace/pytorch-CycleGAN-and-pix2pix/datasets/ && mkdir double_ridge
 
-WORKDIR /workspace
+WORKDIR /temporary_workspace
 
 ##############################################################################
 ##                               detectron2                                 ##
@@ -80,7 +80,7 @@ RUN echo y | apt install libxrender1
 RUN echo y | apt install libgl1-mesa-dev
 
 ##############################################################################
-##                             mask_processing                              ##
+##                                 others                                   ##
 ##############################################################################
 
 RUN rm -r pytorch-CycleGAN-and-pix2pix
