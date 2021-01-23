@@ -65,7 +65,7 @@ If you want to use other pre-trained weights, please change the path in [my code
 
 ### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
-    mkidr input_image
+    mkdir input_image
 
 ### 4. Run process.py
 
