@@ -28,6 +28,8 @@ RUN apt update
 RUN echo y | apt install python3
 RUN echo y | apt install python3-pip
 
+RUN pip3 install --upgrade pip
+
 RUN pip3 install matplotlib && \
     pip3 install pillow && \
     pip3 install opencv-python && \
