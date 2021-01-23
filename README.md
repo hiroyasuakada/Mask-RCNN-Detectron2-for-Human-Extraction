@@ -41,13 +41,11 @@ binary_mask　　　　　　 　　 　cropped_figure
 
 ## Usage
 
-##### Please note that if you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
-
 ### 1. Clone this repository
 
     git clone https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction.git
 
-### 2. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) to install requirements
+### 2. Use [Dockerfile](<https://github.com/hiroyasuakada/mask-processing/tree/master/docker_mask_processing/>) in 'docker_mask_processing' to install requirements
 
     ./build.sh
 
@@ -57,7 +55,7 @@ Current directory should be 'temporary_workspace'.
 
 ### 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
-Please download pre-trained weights, and then put it into configs of the 'detectron2_repo_with_revision' directory.
+Please download the pre-trained weights, and then put it into configs of the 'detectron2_repo_with_revision' directory.
 
     mv (pkl file) ./Mask-RCNN-Detectron2-for-Human-Extraction/detectron2_repo_with_revision/configs/model/
 
@@ -67,10 +65,13 @@ If you want to other pre-trained weights, please change the path in [my code her
 
 ### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
+    mkidr input_image
+
 ### 4. Run process.py
 
     python3 process.py
     
+##### Please note that if you want to extract other objects or only humans, please edit [this line](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Object-Extraction/blob/44d9d90fd9ff50df769c11bfe06a6ce15afd5bef/detectron2_repo_with_revision/detectron2/utils/visualizer.py#L623) accordingly.
 
 ### 5. Get 4 types of images in 'output_image' directory
 
