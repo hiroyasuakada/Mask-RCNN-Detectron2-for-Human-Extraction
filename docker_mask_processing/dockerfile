@@ -51,16 +51,6 @@ RUN cd workspace/pytorch-CycleGAN-and-pix2pix/datasets/ && mkdir double_ridge
 
 WORKDIR /workspace
 
-# ##############################################################################
-# cp -r testA testB trainA trainB /workspace/pytorch-CycleGAN-and-pix2pix/datasets/double_ridge/
-# python3 train.py --dataroot ./datasets/double_ridge --name double_ridge_cyclegan --model cycle_gan --gpu_ids 0,1,2 --batch_size 3
-# python3 test.py --dataroot ./datasets/double_ridge --name double_ridge_cyclegan --model cycle_gan --gpu_ids 0,1,2 --batch_size 3
-
-# python3 -m visdom.server
-# ##############################################################################
-
-
-
 ##############################################################################
 ##                               detectron2                                 ##
 ##############################################################################
