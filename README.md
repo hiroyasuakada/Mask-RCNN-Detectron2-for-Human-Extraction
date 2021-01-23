@@ -60,7 +60,7 @@ Then, put it into configs of mask-processing directory.
 
     mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
 
-Note that if you want to use other pre-trained weights, please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33).
+Note that if you want to use other pre-trained weights (pkl file), please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33).
 
 ### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
