@@ -53,12 +53,14 @@ Current directory should be 'workplace' and my main directory is 'mask-processin
 
 ### 2. Download a pre-trained model from [Detectron2 Model ZOO](<https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md/>) 
 
-My system is using pkl file of *Mask R-CNN X152*, so please download it. 
+My system is using pkl file of *Mask R-CNN X152*, so download it. 
 Then, put it into configs of mask-processing directory.
 
 'cascade_mask_rcnn_X_152_32x8d_FPN_IN5k_gn_dconv.pkl'
 
     mv (pkl file) ./mask-processing/detectron2_repo_with_revision/configs/model/
+
+Note that if you want to use other pre-trained weights, please change the path in [my code here](https://github.com/hiroyasuakada/Mask-RCNN-Detectron2-for-Human-Extraction/blob/fa00e92835b0931e09b7c08947197ee04cf8694d/process.py#L33).
 
 ### 3. Prepare .jpg images in 'input_image' directory (possible to process multiple images)
 
